@@ -53,26 +53,82 @@ a {
   color: rgb(26, 188, 156);
   font-weight: bold;
 }
-
-/* .Rectangle_2 {
-  background-color: rgb(0, 0, 2);
-  opacity: 0.522;
+.slider::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 2, 0.522);
   position: absolute;
-  left: -112px;
-  top: 84px;
-  width: 1807px;
-  height: 607px;
-  z-index: 72;
-} */
-
-/* COLLECTION */
+  top: 0;
+  left: 0;
+}
+.slider {
+  position: relative;
+}
+.slider-titlte h2 {
+  font-size: 60px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.367;
+  font-weight: bold;
+  letter-spacing: -1.2px;
+}
+.slider-titlte p {
+  font-size: 24px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.367;
+  text-align: left;
+}
+.slider-titlte {
+  margin: 0 auto;
+  width: 740px;
+  text-align: center;
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider-button {
+  width: 1110px;
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider-button-left:hover,
+.slider-button-right:hover {
+  background-color: rgb(78, 198, 171);
+}
+.slider-button-left {
+  float: left;
+  border: none;
+  width: 104px;
+  height: 104px;
+  background-color: rgba(78, 198, 171, 0.651);
+  background-image: url(../img/icons/slider-arrow1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slider-button-right {
+  float: right;
+  border: none;
+  width: 104px;
+  height: 104px;
+  background-color: rgba(78, 198, 171, 0.651);
+  background-image: url(../img/icons/slider-arrow2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .slider img {
   display: block;
   width: 100%;
   height: auto;
 }
 .collection {
-  padding-top: 50px;
+  padding-top: 100px;
   background-color: rgb(233, 240, 253);
 }
 .collection h3 {
@@ -163,8 +219,6 @@ button {
   background-clip: padding-box;
   background-color: rgba(0, 0, 0, 0.549);
   display: none;
-  /* width: 235px;
-    height: 261px; */
 }
 .overlay-list {
   position: absolute;
@@ -196,16 +250,11 @@ button {
   background-image: url(../img/icons/watch.png);
 }
 .overlay-list-item-link-basket {
-  /* border-width: 1px;
-  border-color: rgb(255, 255, 255);
-  border-style: solid; */
-  background-color: rgb(50, 50, 50);
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 2.286;
-  /* text-align: center; */
   width: 166px;
   height: 50px;
   background-image: url(../img/icons/basket.png);
@@ -218,10 +267,14 @@ button {
 .overlay-list li:nth-child(-n + 3) {
   margin-bottom: 8px;
 }
-.overlay-list li:hover button {
+.overlay-list-item-link-heart:hover,
+.overlay-list-item-link-2arrow:hover,
+.overlay-list-item-link-watch:hover {
   background-color: rgb(26, 188, 156);
 }
-/* FOOTER */
+.overlay-list-item-link-basket:hover {
+  background-color: rgb(50, 50, 50);
+}
 .info {
   font-size: 16px;
   font-family: "Open Sans", Arial, sans-serif;
