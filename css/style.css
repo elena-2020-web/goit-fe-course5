@@ -87,14 +87,14 @@ a {
   width: 740px;
   text-align: center;
   position: absolute;
-  top: 220px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .slider-button {
   width: 1110px;
   position: absolute;
-  top: 220px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -158,6 +158,7 @@ h3::after {
   margin-right: 30px;
   margin-bottom: 98px;
   width: 255px;
+  height: 282px;
   position: relative;
 }
 .collection-list li:nth-of-type(4n) {
@@ -210,8 +211,8 @@ button {
   background: none;
 }
 .overlay {
-  width: 255px;
-  height: 282px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -285,9 +286,5 @@ button {
   padding: 38px 0 32px 0;
 }
 .info a {
-  color: rgb(254, 254, 254);
-}
-.info a:hover,
-.info a:focus {
   color: rgb(26, 188, 156);
 }
